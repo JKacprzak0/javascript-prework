@@ -1,9 +1,12 @@
-var argButtonName, buttonTest, buttonRock, buttonScissors, buttonPaper;
+
+
+
 
 /**
  * Describe this function...
  */
 function buttonClicked(argButtonName) {
+  let randomNumber,  computerMove, playerMove;
   clearMessages();  //
   console.log(argButtonName + ' został kliknięty');
   playerMove = argButtonName;
@@ -16,8 +19,6 @@ function buttonClicked(argButtonName) {
 
 
 
-
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * Describe this function...
@@ -57,8 +58,9 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 
 
-
-
+let buttonRock,
+  buttonScissors,
+  buttonPaper;
 
 buttonRock = document.getElementById('button-rock'); //query selector all i po klasach i id
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); }); //spr events
