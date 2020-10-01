@@ -1,11 +1,6 @@
+//const functionName = function(params){}
 
-
-
-
-/**
- * Describe this function...
- */
-function buttonClicked(argButtonName) {
+const buttonClicked = function(argButtonName){
   let randomNumber,  computerMove, playerMove;
   clearMessages();  //
   console.log(argButtonName + ' został kliknięty');
@@ -17,13 +12,7 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
-
-
-
-/**
- * Describe this function...
- */
-function getMoveName(argMoveId) {
+const getMoveName = function(argMoveId){
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
     return 'kamień';
@@ -37,10 +26,8 @@ function getMoveName(argMoveId) {
   }
 }
 
-/**
- * Describe this function...
- */
-function displayResult(argPlayerMove, argComputerMove) {
+//function displayResult(argPlayerMove, argComputerMove) {
+const displayResult = function(argPlayerMove, argComputerMove){
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
@@ -55,8 +42,6 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-
-
 
 let buttonRock,
   buttonScissors,
